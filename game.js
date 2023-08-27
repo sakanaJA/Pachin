@@ -145,13 +145,14 @@ function loadScore() {
 loadScore();
 
 const bgMusic = document.getElementById('bgMusic');
-bgMusic.volume = 0.2;
+bgMusic.volume = 0.1;
 bgMusic.play();
+// スロットの音の音量を50%に設定
+const slotSound = document.getElementById('slotSound');
+slotSound.volume = 0.1;
 
 Engine.run(engine);
 Render.run(render);
 
 
-// スロットの音の音量を50%に設定
-const slotSound = document.getElementById('slotSound');
-slotSound.volume = 0.2;
+
