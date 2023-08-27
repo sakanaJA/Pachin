@@ -1,4 +1,11 @@
 const { Engine, Render, World, Bodies, Mouse, MouseConstraint, Events } = Matter;
+// 音楽の音量を50%に設定
+const bgMusic = document.getElementById('bgMusic');
+bgMusic.volume = 0.2;
+
+// スロットの音の音量を50%に設定
+const slotSound = document.getElementById('slotSound');
+slotSound.volume = 0.2;
 
 
 const engine = Engine.create();
